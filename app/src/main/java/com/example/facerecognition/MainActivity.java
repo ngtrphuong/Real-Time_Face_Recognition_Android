@@ -622,9 +622,13 @@ public class MainActivity extends AppCompatActivity {
                 label = name;
                 distance = nearest.second;
                 if(distance<1.000f) //If distance between Closest found face is more than 1.000 ,then output UNKNOWN face.
-                    reco_name.setText(name);
+                    {
+                        reco_name.setText(name);
+                    }
                 else
-                    reco_name.setText("Unknown");
+                    {
+                        reco_name.setText("Unknown");
+                    }
                     System.out.println("nearest: " + name + " - distance: " + distance);
 
 
